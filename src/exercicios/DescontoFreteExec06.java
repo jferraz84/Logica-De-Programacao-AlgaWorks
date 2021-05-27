@@ -32,6 +32,8 @@ public class DescontoFreteExec06 {
 		} while (resposta == 's' || resposta == 'S');
 		
 		System.out.println("Obrigado por comprar conosco ! ");
+		
+		scan.close();
 	}
 
 }
