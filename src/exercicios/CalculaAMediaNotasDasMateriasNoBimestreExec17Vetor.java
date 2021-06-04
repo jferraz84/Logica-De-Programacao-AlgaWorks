@@ -3,7 +3,7 @@ package exercicios;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class CalculaAMediaNotasDasMateriasNoBimestreExecVetor {
+public class CalculaAMediaNotasDasMateriasNoBimestreExec17Vetor {
 
 	public static void main(String[] args) {
 
