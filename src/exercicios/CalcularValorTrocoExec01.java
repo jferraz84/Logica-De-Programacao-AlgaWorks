@@ -1,25 +1,25 @@
 package exercicios;
 
-import java.util.Scanner;
+import console.Interacao;
 
 public class CalcularValorTrocoExec01 {
 
 	public static void main(String[] args) {
 		
-		Scanner scanner = new Scanner(System.in);
+		Interacao interacao = new Interacao();
 		
-		System.out.print("Digite o valor do Produto: R$ ");
-		Double valorProduto = scanner.nextDouble();
+		Double valorProduto = interacao.lerNDecimal("Digite o valor do Produto: R$ ");
 		
-		System.out.print("Dinheiro recebido: R$ ");
-		Double valorRecebido = scanner.nextDouble();
+		Double valorRecebido = interacao.lerNDecimal("Dinheiro recebido: R$ ");
 		
 		Double valorTroco = valorRecebido - valorProduto;
 		
-		System.out.println("===============================");
-		System.out.print("Valor do troco é R$ " + valorTroco);
-
-		scanner.close();
+		interacao.imprimir("===============================");
+		
+		interacao.imprimir("Valor do troco é R$ " + valorTroco);
+		
+		interacao.fechar();
+		
 	}
 
 }
